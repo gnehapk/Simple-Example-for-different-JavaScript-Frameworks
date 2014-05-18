@@ -1,5 +1,5 @@
 Todos.Todo = DS.Model.extend({
-  title: DS.attr('string'),
+  title: DS.attr('string'),  //Each todo will have two attributes: title and isCompleted.
   isCompleted: DS.attr('boolean')
 });
 
