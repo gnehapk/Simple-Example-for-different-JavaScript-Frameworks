@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script type="text/x-handlebars" data-template-name="todos">
+  <!--Handlebars templates are just like regular HTML, but also give you the ability to embed expressions that change what is displayed.-->
+    <script type="text/x-handlebars" data-template-name="todos">  
       <section id="todoapp">
         <header id="header">
           <h1>todos</h1>
@@ -15,8 +16,8 @@
 
         <section id="main">
           <ul id="todo-list">
-            {{#each}}
-              <li {{bind-attr class="isCompleted:completed"}}>
+            {{#each}}  //loops over the content of its controller
+              <li {{bind-attr class="isCompleted:completed"}}> //binding a class when a todo is completed
                 <input type="checkbox" class="toggle">
                 <label>{{title}}</label><button class="destroy"></button>
               </li>
